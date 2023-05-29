@@ -27,6 +27,74 @@
       </include>
     </model>
 
+        <model name='dropoff_box'>
+                  <pose>-0.131978 -0.877815 0 0 -0 0</pose>
+
+      <static>1</static>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.0755262</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0441608</iyy>
+            <iyz>0</iyz>
+            <izz>0.103304</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://dropoff_box/meshes/box_v1.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>30</mu>
+                <mu2>30</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://dropoff_box/meshes/box_v1.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <enable_wind>0</enable_wind>
+      </link>
+      <pose>-0.131978 -0.654128 0 0 -0 0</pose>
+    </model>
+
+
     <model name='ycb_021_bleach_cleanser'>
       <link name='body'>
         <inertial>
@@ -78,7 +146,9 @@
         <kinematic>0</kinematic>
       </link>
 <!--        <pose>0.366727 -0.382237 0.773855 -0.001402 -0.004692 2.69</pose>-->
-        <pose>0.366727 -0.382237 0.073855 -0.001402 -0.004692 2.69</pose>
+<!--        <pose>0.366727 -0.382237 0.073855 -0.001402 -0.004692 2.69</pose>-->
+                <pose>0.579100 0.034496 0.775622 0 -0 0</pose>
+
     </model>
 
     <model name='ycb_030_fork'>
@@ -132,7 +202,9 @@
         <kinematic>0</kinematic>
       </link>
 <!--        <pose>0.371504 -0.403963 0.774835 0.052792  -0.003105 -1.706223 </pose>-->
-        <pose>0.371504 -0.403963 0.074835 0.052792  -0.003105 -1.706223 </pose>
+<!--        <pose>0.371504 -0.403963 0.074835 0.052792  -0.003105 -1.706223 </pose>-->
+                <pose>0.380599 -0.082195 0.777152 0.113089 -0 -1.698582</pose>
+
     </model>
 
 
