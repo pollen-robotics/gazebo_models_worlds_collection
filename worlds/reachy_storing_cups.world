@@ -1814,9 +1814,6 @@
       <pose>0.715365 -0.598009 0.774246 0.000121 -0.006864 -0.000585</pose>
     </model>
     <state world_name='reachy_minimal'>
-      <sim_time>3228 535000000</sim_time>
-      <real_time>3607 149535142</real_time>
-      <wall_time>1685452345 465304566</wall_time>
       <iterations>3228535</iterations>
       <model name='cafe_table'>
         <pose>0.747357 -0.292604 0 0 -0 0</pose>
